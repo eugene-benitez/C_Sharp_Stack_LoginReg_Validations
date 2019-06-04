@@ -1,0 +1,19 @@
+@using C_Sharp.Models
+@model User
+<div>
+    <h1>Login</h1>
+</div>
+<form action="log" method="post">
+            <span asp-validation-for="Email"></span>
+            <label asp-for="Email"></label>
+            <br>
+            <input asp-for="Email">
+            <br><br>
+            <span asp-validation-for="Password"></span>
+            <label asp-for="Password"></label>
+            <br>
+            <input asp-for="Password">
+            <br><br>
+        <input type="submit" value="Log in">
+</form>
+</div>
